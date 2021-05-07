@@ -26,4 +26,4 @@ jobs:
         with:
           push: true
           context: .
-          tags: ingokuba/docker-dind-maven:latest
+          tags: ikuba/docker-dind-maven:latest
