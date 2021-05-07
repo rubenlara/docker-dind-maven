@@ -26,4 +26,7 @@ jobs:
         with:
           push: true
           context: .
-          tags: ingokuba/docker-dind-maven:latest
+          repository: ingokuba/docker-dind-maven
+          tags: |
+               ${GITHUB_REF##*/}
+               latest
