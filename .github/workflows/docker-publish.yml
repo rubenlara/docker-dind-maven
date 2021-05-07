@@ -28,5 +28,5 @@ jobs:
           context: .
           repository: ingokuba/docker-dind-maven
           tags: |
-               ${GITHUB_REF##*/}
+               openjdk11
                latest
