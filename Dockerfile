@@ -1,7 +1,7 @@
 FROM docker:dind
 
-RUN apk add --no-cache bash maven
-RUN apk --no-cache add openjdk11 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+RUN apk add --no-cache bash maven==${MAVEN_APK_VERSION}
+RUN apk --no-cache add ${JDK_APK_PACKAGE}
 
 COPY docker-entrypoint.sh /
 RUN chmod 755 /docker-entrypoint.sh
