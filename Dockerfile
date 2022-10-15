@@ -1,3 +1,6 @@
+ARG MAVEN_APK_VERSION
+ARG JDK_APK_PACKAGE
+
 FROM docker:dind
 
 RUN apk add --no-cache bash maven==${MAVEN_APK_VERSION}
