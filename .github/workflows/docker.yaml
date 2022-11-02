@@ -2,8 +2,8 @@ name: docker
 
 on:
   push:
-    branches-ignore:
-      - "master"
+    branches:
+      - "^[^/]+/[^/]+$"
 
 jobs:
   docker:
